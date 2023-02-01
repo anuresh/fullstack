@@ -25,6 +25,7 @@ const SignUp = () => {
   return (
     <div className="columns mt-5">
       <div className="column is-half">
+      <article className="message-header"><p>Create Account</p></article>
         <form onSubmit={signup}>
           <div className="field">
             <label className="label">Name</label>

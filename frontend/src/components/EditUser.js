@@ -31,7 +31,7 @@ const EditUser = () => {
         gender,
         designation
       });
-      navigate("/");
+      navigate("/userlist");
     } catch (error) {
       console.log(error);
     }

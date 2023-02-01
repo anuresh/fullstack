@@ -15,7 +15,7 @@ const Login = () => {
         email,
         password
       });
-      navigate("/");
+      navigate("/userlist");
     } catch (error) {
         setErrorMessage('Incorrect Email or Password');
         console.log(error);
@@ -25,6 +25,7 @@ const Login = () => {
   return (
     <div className="columns mt-5">
       <div className="column is-half">
+      <article className="message-header"><p>Login</p></article>
         <form onSubmit={login}>
           <div className="field">
             <label className="label">Email</label>

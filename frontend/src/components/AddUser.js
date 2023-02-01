@@ -18,7 +18,7 @@ const AddUser = () => {
         gender,
         designation,
       });
-      navigate("/");
+      navigate("/userlist");
     } catch (error) {
       console.log(error);
     }
@@ -27,6 +27,7 @@ const AddUser = () => {
   return (
     <div className="columns mt-5">
       <div className="column is-half">
+      <article className="message-header"><p>Add Employee Details</p></article>
         <form onSubmit={saveUser}>
           <div className="field">
             <label className="label">Name</label>
